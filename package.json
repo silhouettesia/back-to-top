@@ -1,10 +1,9 @@
 {
-  "name": "back2top",
+  "name": "back2top-sia",
   "description": "back to top in vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "silhouetteq1@gmail.com",
   "license": "MIT",
-  "private": true,
   "main": "./src/back2top.vue",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

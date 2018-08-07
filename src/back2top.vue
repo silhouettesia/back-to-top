@@ -85,7 +85,10 @@ export default {
     },
     scrollStepAccuracy(newTimestamp) {
       this.scrollCount += Math.PI / (this.scrollDuration / (newTimestamp - this.oldTimestamp));
-      if (this.scrollCount >= Math.PI) window.scrollTo(0, 0);
+      if (this.scrollCount >= Math.PI) {
+        window.scrollTo(0, 0);
+        this.isScrolling = false;
+      }
       if (!(window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop)) {
         this.scrollCount = 0;
         return;
